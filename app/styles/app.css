@@ -35,3 +35,7 @@ input[type=text] {
 input[type=text]:focus {
     width: 100%;
 }
+
+body{
+  background-color: #e6fff3
+}
