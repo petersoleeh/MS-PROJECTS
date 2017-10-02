@@ -1,3 +1,7 @@
-
 <h1><strong><em>MS-Projects</em></strong></h1>
-{{outlet}}
+
+<ol>
+  {{#each model as | project |}}
+    <li>{{project.github}} by {{project.contributors}}</li>
+  {{/each}}
+</ol>
