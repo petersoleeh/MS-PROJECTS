@@ -5,16 +5,17 @@ export default Ember.Component.extend({
     submitUrl() {
 
       var q = {
+        deployed: this.get('url'),
         github: this.get('github')
       }
       var a = q.github.split('/')
       var aa = q.github.split('/')
       var b = a.splice(3, 2)
       var c = b.join('/')
-      console.log(aa);
-      var d = aa.splice(-2)
+      var d = aa.splice(-1)
       var e = d.join()
-
+      var f = 'http://api.screenshotmachine.com/?key=12345&dimension=1024x768&hash=94f0097b94d2f2486db52aab7cf268ad&url=' + q.deployed
+      // console.log(f);
       var array = []
       var url = 'https://api.github.com/repos/' + c + '/contributors'
       Ember.$.getJSON(url).then(function(response) {
@@ -25,10 +26,11 @@ export default Ember.Component.extend({
         // return array
       })
       var params = {
-        name: e,
+        images: f,
+        projectname: e,
         github: this.get('github'),
         contributors: array,
-        url: this.get('url')
+        site: this.get('url')
       }
       this.sendAction('submitUrl', params)
     }

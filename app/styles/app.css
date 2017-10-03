@@ -48,6 +48,7 @@ body {
 
 img {
   height: 100px;
+  width: 200px;
 }
 
 .tabs {
@@ -56,12 +57,7 @@ img {
   padding: 20px;
 }
 
-@media screen and (min-width: 480px) {
-  body {
-    background-color: black;
-    color: white;
-  }
-}
+@media screen and (min-width: 480px) {}
 
 
 /*body {
