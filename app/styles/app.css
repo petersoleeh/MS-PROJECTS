@@ -43,7 +43,7 @@ input[type=text]:focus {
 }
 
 body {
-  background-color: #e6fff3
+  background-color: #b3ffff;
 }
 
 img {
@@ -52,7 +52,7 @@ img {
 }
 
 .tabs {
-  background-color: #99ccff;
+  background-color:  #99ff99 ;
   margin: 20px;
   padding: 30px;
 }
