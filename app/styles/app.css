@@ -47,20 +47,17 @@ body {
 }
 
 img {
-  height: 100px;
+  height: 200px;
+  width: 200px;
 }
 
 .tabs {
   background-color: #99ccff;
-  margin: 10px;
-  padding: 20px;
+  margin: 20px;
+  padding: 30px;
 }
 
 @media screen and (min-width: 480px) {
-  body {
-    background-color: black;
-    color: white;
-  }
 }
 
 
