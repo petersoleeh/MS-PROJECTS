@@ -45,10 +45,12 @@ input[type=text]:focus {
 body {
   background-color: #e6fff3
 }
+
 img {
   height: 100px;
 }
-.tabs{
+
+.tabs {
   background-color: #99ccff;
   margin: 10px;
   padding: 20px;
