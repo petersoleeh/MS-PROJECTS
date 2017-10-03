@@ -128,3 +128,18 @@ img {
   color: #000;
   text-shadow: 0 0 5px #09f;
 }
+
+.big {
+  width: 700px;
+  height: 420px;
+}
+
+.right {
+  float: right;
+}
+
+.comment {
+  padding: 20px;
+  background-color: white;
+  margin: 20px;
+}
