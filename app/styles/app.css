@@ -43,18 +43,18 @@ input[type=text]:focus {
 }
 
 body {
-  background-color: #e6fff3
+  background-color: #b3ffff;
 }
 
 img {
-  height: 100px;
+  height: 200px;
   width: 200px;
 }
 
 .tabs {
-  background-color: #99ccff;
-  margin: 10px;
-  padding: 20px;
+  background-color: #99ff99;
+  margin: 20px;
+  padding: 30px;
 }
 
 @media screen and (min-width: 480px) {}
