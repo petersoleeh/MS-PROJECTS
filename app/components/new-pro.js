@@ -14,7 +14,7 @@ export default Ember.Component.extend({
       var c = b.join('/')
       var d = aa.splice(-1)
       var e = d.join()
-      var f = 'http://api.screenshotmachine.com/?key=12345&dimension=1024x768&hash=94f0097b94d2f2486db52aab7cf268ad&url=' + q.deployed
+      var f = 'http://api.screenshotmachine.com/?key=4055d6&dimension=1024x768&hash=94f0097b94d2f2486db52aab7cf268ad&url=' + q.deployed
       // console.log(f);
       var array = []
       var url = 'https://api.github.com/repos/' + c + '/contributors'

@@ -1,0 +1,13 @@
+{{#if addNewComment}}
+
+<form class="Comment" method="post">
+{{input value=content type="text" name="Comment"  placeholder="Comment about project"}}<br>
+<p></p>
+{{input value=author type="text" name="Comment"  placeholder="author"}}<br>
+<p></p>
+<button {{action 'saveComment'}} type="button" name="button"class="btn btn-submit">Submit Comment</button>
+
+</form>
+{{else}}
+<button {{action 'commentShow'}} type="button" name="button"class="btn btn-submit">Add Comment</button>
+{{/if}}

@@ -1,6 +1,12 @@
+@@font-face {
+  font-family: 'Nosifer';
+  src: local('../fonts/Nosifer-Regular');
+  font-weight: 400;
+  font-style: normal;
+}
+
 h1 {
   text-align: center;
-
 }
 
 ul {
@@ -42,9 +48,10 @@ input[type=text] {
 input[type=text]:focus {
   width: 100%;
 }
+
 body {
 /*background-image: url("../assets/img/digital.jpg");*/
-background-repeat: no-repeat;
+background-color: 6297cc;
 background-size: cover;
 color: white;
 }
