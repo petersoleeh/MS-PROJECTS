@@ -1,18 +1,25 @@
- { "projects": [{
+{
+  "projects": [{
   "id": 1,
   "github": "https://github.com/DavidNjoroge/Kalisoft",
+  "projectname": "Kalisoft",
+  "site": "https://davidnjoroge.github.io/Kalisoft/",
   "contributors": "Njoroge",
-  "images": ""
+  "images": "http://api.screenshotmachine.com/?key=4055d6&dimension=1024x768&hash=94f0097b94d2f2486db52aab7cf268ad&url=http://google.com"
 }, {
   "id": 2,
   "github": "https://github.com/Idaapayo/ECF",
+  "projectname": "Faida ECF",
+  "site": "https://idaapayo.github.io/ECF/",
   "contributors": "David",
-  "images": ""
+  "images": "https://screenshotmachine.com/serve.php?img=idaapayo-github-io-1024x768desktop-60259d.png"
 }, {
   "id": 3,
   "github": "https://github.com/jonnygovish/Bubble-Blaster-Game",
+  "projectname": "Bubble Blaster",
+  "site": "https://jonnygovish.github.io/Bubble-Blaster-Game/",
   "contributors": "Vinny",
-  "images": ""
+  "images": "https://screenshotmachine.com/serve.php?img=jonnygovish-github-io-1024x768desktop-d6420d.png"
 
- }]
+}]
 }

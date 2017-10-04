@@ -1,0 +1,13 @@
+<div class="tabs">
+  <div class="row">
+    <div class="col-md-3">
+    <img src={{project.images}} height="300px" width="500px">
+  </div>
+  <div class="col-md-9">
+    {{#link-to 'project' project.id}}<h2>{{project.projectname}}</h2>{{/link-to}}
+    <p>Contributors Peter,NjorogeDavid,Vincent</p>
+    <a href={{project.site}}>link of deployed site </a>
+    <p> <button type="button" name="Update">Update</button> </p>
+    </div>
+   </div>
+  </div>
