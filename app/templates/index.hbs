@@ -1,10 +1,16 @@
 <h1><strong><em>MS-Projects</em></strong></h1>
-
+<div>
+  {{new-comment saveComment='saveComment'}}
+  {{#each model.comments as |comment|}}
+    <p>{{review.rating}} - {{comment.content}} - by {{comment.author}}</p>
+  {{/each}}
+</div>
 <div class="container">
 <ol>
-  {{#each model as |project|}}
+  {{#each model.projects as |project|}}
     {{project-tile project=project}}
   {{/each}}
 </ol>
+
 </div>
 {{outlet}}
