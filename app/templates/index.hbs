@@ -2,8 +2,8 @@
 
 <div class="container">
 <ol>
-  {{#each model.projects as |project|}}
-    {{project-tile project=project}}
+  {{#each model as |project|}}
+    {{project-tile project=project update="update"}}
   {{/each}}
 </ol>
 
