@@ -26,6 +26,16 @@ module.exports = function(environment) {
       storageBucket: "",
       messagingSenderId: "890174807269"
     },
+    googleFonts: [
+      'Open+Sans:30,40,70',
+      'Roboto:40'
+    ],
+
+    // Set or update content security policies
+    contentSecurityPolicy: {
+      'font-src': "'self' fonts.gstatic.com",
+      'style-src': "'self' fonts.googleapis.com"
+    },
 
 
     APP: {
