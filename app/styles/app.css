@@ -56,11 +56,11 @@ img {
   padding: 20px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 580px) {
 body {
-  background-color: black;
+  background-color: #030a16;
 
-  color: white;
+  color: #ffffff;
   }
 }
 /*body {
