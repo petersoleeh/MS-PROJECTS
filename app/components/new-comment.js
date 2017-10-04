@@ -11,10 +11,16 @@ export default Ember.Component.extend({
       var params = {
         author: this.get('author'),
         content: this.get('content'),
+        rating: this.get('rating'),
+        project: this.get('project')
+      }
+      var param = {
+        rating: this.get('rating'),
         project: this.get('project')
       }
       this.set('addNewComment', false)
       this.sendAction('saveComment', params)
+      this.sendAction('saveRating', param)
     }
   }
 });
