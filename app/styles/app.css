@@ -1,5 +1,13 @@
+@@font-face {
+  font-family: 'Nosifer';
+  src: local('../fonts/Nosifer-Regular');
+  font-weight: 400;
+  font-style: normal;
+}
+
 h1 {
   text-align: center;
+  font-family: 'Nosifer';
 }
 
 ul {
