@@ -1,9 +1,9 @@
-@@font-face {
+/*@@font-face {
   font-family: 'Nosifer';
   src: local('../fonts/Nosifer-Regular');
   font-weight: 400;
   font-style: normal;
-}
+}*/
 
 h1 {
   text-align: center;
@@ -51,14 +51,24 @@ input[type=text]:focus {
   width: 100%;
 }
 @font-face {
-  
-  src: url('https://fonts.googleapis.com/css?family=Oswald|Robot');
+
+  src: url('https://fonts.googleapis.com/css?family=Tangerine');
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Tangerine', cursive;
+  font-size: 22px;
+  /*text-shadow: 4px 4px 4px #aaa;*/
   background-image: "https://thumbs.dreamstime.com/z/digital-program-code-2271732.jpg";
   /*background-color: #669900;*/
+}
+
+button {
+  background-color: inherit;
+}
+
+p {
+  color:blue;
 }
 
 img {
@@ -67,9 +77,10 @@ img {
 }
 
 .tabs {
-  background-color: #ccffff;
+  background-color: #162955;
   margin: 20px;
   padding: 30px;
+  border-radius: 15px;
 }
 
 @media screen and (min-width: 580px) {
