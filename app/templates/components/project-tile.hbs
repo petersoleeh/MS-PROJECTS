@@ -1,12 +1,13 @@
 <div class="tabs">
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-6">
     <img src={{project.images}} height="300px" width="500px">
   </div>
-  <div class="col-md-4">
-    {{#link-to 'project' project.id}}<h2>{{project.projectname}}</h2>{{/link-to}}
+  <div class="col-md-6">
+    {{#link-to 'project' project.id}}<h2 class="projecttitle">{{project.projectname}}</h2>{{/link-to}}
     <p>list of contributors {{project.contributors}}</p>
     <a href={{project.site}}>link of deployed site </a>
+    <p>Comments {{project.comments}}
     {{update-project project=project update='update'}}
     </div>
    </div>
