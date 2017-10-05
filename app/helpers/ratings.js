@@ -7,12 +7,12 @@ export function ratings(params /*, hash*/ ) {
     return rating.get('rating');
   });
   var total = 0
-  console.log('ratings');
   for (var i = 0; i < ratings.length; i++) {
     total = ratings[i] + total
   }
   var av = total / ratings.length
-  return av
+  var p = total
+  return av.toFixed(1)
   // if (rentalPrice >= 150) {
   //   return '$$$$';
   // } else if (rentalPrice >= 100) {
