@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  previewProject: false,
   actions: {
     submitUrl() {
 
@@ -33,6 +34,9 @@ export default Ember.Component.extend({
         site: this.get('url')
       }
       this.sendAction('submitUrl', params)
-    }
+    },
+    previewProject() {
+      this.set('previewProject', true);
+    },
   }
 });
