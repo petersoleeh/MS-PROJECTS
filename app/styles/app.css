@@ -190,10 +190,11 @@ a {
 .panel-footer {
   background-image: url('http://www.planwallpaper.com/static/images/background_design_9a_by_jahim_myess-d6dniqj.jpg');
 }
- .comment {
-   background-color:#b25c56;
-   border-radius: 80px;
- }
+
+.comment {
+  background-color: #b25c56;
+  border-radius: 80px;
+}
 
 a {
   color: white;
@@ -201,10 +202,17 @@ a {
 
 .update {
   margin-top: 100px;
-
 }
 
 .projecttitle {
   font-size: 50px;
   font-family: 'Lato', sans-serif;
+}
+
+form {
+  color: black;
+}
+
+.btn {
+  color: black;
 }

@@ -5,28 +5,5 @@
   github handle:<br>
   {{input value=github type="text" id="github"}}
 </div>
-  <button {{action "previewProject"}} type="submit"  class="btn btn-submit">Preview Project</button>
+  <button {{action "submitUrl"}} type="submit"  class="btn btn-submit">Submit Project</button>
 </form>
-
-{{#if previewProject}}
-<div class="container">
-  <h2>Project Preview</h2>
-  <div class="tabs">
-  <div class="row">
-    <div class="col-md-9">
-    <img class="big" src={{project.images}}>
-  </div>
-  <div class="col-md-3">
-    <h2>{{project.projectname}}</h2>
-    <p>Github handle{{project.github}}</p>
-    <p>Commits:73</p>
-    <p>contributors {{project.contributors}}</p>
-    <a href={{project.site}}>link of deployed site </a>
-    </div>
-    </div>
-   </div>
-   <form class="Comment" method="post">
-<button {{action "submitUrl"}}type="button" name="button"class="btn btn-submit">Submit Project</button>
-</form>
-</div>
-{{/if}}

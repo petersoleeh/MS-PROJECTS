@@ -13,6 +13,9 @@ Router.map(function() {
   this.route('project', {
     path: '/project/:project_id'
   });
+  this.route('update', {
+    path: '/update/:project_id'
+  });
 });
 
 export default Router;

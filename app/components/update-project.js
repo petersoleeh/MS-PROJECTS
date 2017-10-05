@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   updateProject: false,
   actions: {
     updateProject() {
-      this.set('updateProject', true);
+      // this.set('updateProject', true);
     },
     update(project) {
       var params = {

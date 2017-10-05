@@ -8,5 +8,8 @@ export default DS.Model.extend({
   images: DS.attr(),
   comments: DS.hasMany('comment', {
     async: true
+  }),
+  ratings: DS.hasMany('rating', {
+    async: true
   })
 });
