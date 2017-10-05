@@ -5,8 +5,8 @@ export default Ember.Route.extend({
     submitUrl(params) {
       console.log(params);
       var newProject = this.store.createRecord('project', params)
-      // newProject.save()
-      // this.transitionTo('index')
+      newProject.save()
+      this.transitionTo('index')
       // console.log(params);
     }
   }

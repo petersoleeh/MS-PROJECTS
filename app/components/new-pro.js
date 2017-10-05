@@ -7,7 +7,6 @@ export default Ember.Component.extend({
       this.set('viewPreview', true);
     },
     submitUrl() {
-      console.log('am here');
       var q = {
         deployed: this.get('url'),
         github: this.get('github')
@@ -23,12 +22,14 @@ export default Ember.Component.extend({
       var array = []
       var url = 'https://api.github.com/repos/' + c + '/contributors'
       Ember.$.getJSON(url).then(function(response) {
+        var array = []
         for (var i = 0; i < response.length; i++) {
           array.push(response[i].login)
         }
         // console.log(array);
-        // return array
+
       })
+
       var params = {
         images: f,
         projectname: e,
