@@ -1,11 +1,11 @@
 <form>
-<div class="form-group">
+<div class="form-group deployed" >
   Deployed Site:<br>
   {{input value=url type="text" id='url'}}<br>
   github handle:<br>
   {{input value=github type="text" id="github"}}
 </div>
-  <button {{action "previewProject"}} type="submit"  class="btn btn-submit">Preview Project</button>
+  <button {{action "previewProject"}} type="submit"  class="btn btn-submit submit">Preview Project</button>
 </form>
 
 {{#if previewProject}}
@@ -26,7 +26,7 @@
     </div>
    </div>
    <form class="Comment" method="post">
-<button {{action "submitUrl"}}type="button" name="button"class="btn btn-submit">Submit Project</button>
+<button {{action "submitUrl"}}type="button" name="button"class="btn btn-submit submitU">Submit Project</button>
 </form>
 </div>
 {{/if}}
