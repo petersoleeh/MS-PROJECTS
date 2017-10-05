@@ -187,9 +187,6 @@ a {
   margin: 20px;
 }
 
-.panel-footer {
-  background-image: url('http://www.planwallpaper.com/static/images/background_design_9a_by_jahim_myess-d6dniqj.jpg');
-}
  .comment {
    background-color:#b25c56;
    border-radius: 80px;
@@ -207,4 +204,22 @@ a {
 .projecttitle {
   font-size: 50px;
   font-family: 'Lato', sans-serif;
+}
+.form-group {
+  color:black;
+}
+
+.submit {
+  background-color: black;
+}
+
+.submitU {
+  background-color: black;
+}
+
+.panel-footer {
+  background-color: #5F89B2;
+  bottom: 0;
+  position: relative;
+
 }
