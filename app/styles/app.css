@@ -193,7 +193,9 @@ a {
 }
 
 .panel-footer {
-  background-image: url('http://www.planwallpaper.com/static/images/background_design_9a_by_jahim_myess-d6dniqj.jpg');
+    background-color: #5F89B2;
+padding: 30px;
+/*margin: 0px;*/
 }
 
 .comment {
@@ -220,4 +222,31 @@ form {
 
 .btn {
   color: black;
+}
+.panel-panel-default{
+
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-snapchat {
+  background-color: yellow;
 }
