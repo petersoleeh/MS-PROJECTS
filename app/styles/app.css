@@ -10,9 +10,6 @@ h1 {
   color: black;
   font-weight: bolder;
 }
-a{
-  color: white;
-}
 
 ul {
   list-style-type: none;
@@ -60,10 +57,6 @@ input[type=text]:focus {
 }
 
 body {
-<<<<<<< HEAD
-  background-color: #6297cc;
-}
-=======
   font-family: 'Lato', sans-serif;
   font-size: 22px;
   background-color: #6297cc;
@@ -72,7 +65,7 @@ body {
   /*text-shadow: 4px 4px 4px #aaa;*/
   /*background-image: "https://thumbs.dreamstime.com/z/digital-program-code-2271732.jpg";*/
   /*background-color: #669900;*/
->>>>>>> 4a271431e45b7d8807d8b4a35ff60e7134870c45
+
 }
 
 
@@ -91,19 +84,16 @@ img {
 }
 
 .tabs {
-<<<<<<< HEAD
+
   background-color: #B25C56;
 
   margin: 20px;
   padding: 10px;
-=======
-  background-color: #b25c56;
   /*background-color: transparent;*/
   margin: 20px;
   padding: 10px;
   border-radius: 15px;
   text-align: center;
->>>>>>> 4a271431e45b7d8807d8b4a35ff60e7134870c45
 }
 
 @media screen and (min-width: 580px) {
@@ -201,16 +191,6 @@ a {
   background-color: white;
   margin: 20px;
 }
-<<<<<<< HEAD
-.footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
-=======
 
 .panel-footer {
   background-image: url('http://www.planwallpaper.com/static/images/background_design_9a_by_jahim_myess-d6dniqj.jpg');
@@ -232,7 +212,6 @@ a {
 .projecttitle {
   font-size: 50px;
   font-family: 'Lato', sans-serif;
->>>>>>> 4a271431e45b7d8807d8b4a35ff60e7134870c45
 }
 
 form {
