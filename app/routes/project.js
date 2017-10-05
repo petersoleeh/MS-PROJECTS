@@ -12,7 +12,7 @@ export default Ember.Route.extend({
       newComment.save().then(function() {
         return project.save()
       })
-      console.log(params);
+      // console.log(params);
       this.transitionTo('project', project)
     }
   }

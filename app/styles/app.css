@@ -1,12 +1,14 @@
-@@font-face {
+/*@@font-face {
   font-family: 'Nosifer';
   src: local('../fonts/Nosifer-Regular');
   font-weight: 400;
   font-style: normal;
-}
+}*/
 
 h1 {
   text-align: center;
+  color: black;
+  font-weight: bolder;
 }
 a{
   color: white;
@@ -52,24 +54,64 @@ input[type=text]:focus {
   width: 100%;
 }
 
-body {
-  background-color: #6297cc;
-}
+@font-face {
+  src: url('https://fonts.googleapis.com/css?family=Tangerine');
+  src: url('https://fonts.googleapis.com/css?family=Lato');
 }
 
+body {
+<<<<<<< HEAD
+  background-color: #6297cc;
+}
+=======
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  background-color: #6297cc;
+  background-size: cover;
+  color: white;
+  /*text-shadow: 4px 4px 4px #aaa;*/
+  /*background-image: "https://thumbs.dreamstime.com/z/digital-program-code-2271732.jpg";*/
+  /*background-color: #669900;*/
+>>>>>>> 4a271431e45b7d8807d8b4a35ff60e7134870c45
+}
+
+
+/*button {
+  background-color: #162955;
+}*/
+
+
+/*p {
+  color: #4F628E;
+}*/
+
 img {
-  height: 200px;
-  width: 200px;
+  height: 280px;
+  width: 500px;
 }
 
 .tabs {
+<<<<<<< HEAD
   background-color: #B25C56;
 
   margin: 20px;
   padding: 10px;
+=======
+  background-color: #b25c56;
+  /*background-color: transparent;*/
+  margin: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+>>>>>>> 4a271431e45b7d8807d8b4a35ff60e7134870c45
 }
 
-@media screen and (min-width: 480px) {}
+@media screen and (min-width: 580px) {
+  body {
+    background-color: #6297cc;
+    color: #ffffff;
+  }
+}
 
 
 /*body {
@@ -82,6 +124,10 @@ img {
   height: 50px;
   line-height: 50px;
   font-size: 50px;
+}
+
+a {
+  font-size: 18px;
 }
 
 .rating label {
@@ -155,6 +201,7 @@ img {
   background-color: white;
   margin: 20px;
 }
+<<<<<<< HEAD
 .footer {
   position: absolute;
   right: 0;
@@ -163,4 +210,27 @@ img {
   padding: 1rem;
   background-color: #efefef;
   text-align: center;
+=======
+
+.panel-footer {
+  background-image: url('http://www.planwallpaper.com/static/images/background_design_9a_by_jahim_myess-d6dniqj.jpg');
+}
+ .comment {
+   background-color:#b25c56;
+   border-radius: 80px;
+ }
+
+a {
+  color: white;
+}
+
+.update {
+  margin-top: 100px;
+
+}
+
+.projecttitle {
+  font-size: 50px;
+  font-family: 'Lato', sans-serif;
+>>>>>>> 4a271431e45b7d8807d8b4a35ff60e7134870c45
 }
