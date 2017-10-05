@@ -7,6 +7,8 @@
 
 h1 {
   text-align: center;
+  color:black;
+  font-weight:bolder;
 }
 
 ul {
@@ -55,20 +57,23 @@ input[type=text]:focus {
   src: url('https://fonts.googleapis.com/css?family=Tangerine');
 }
 
+
+
 body {
   font-family: 'Tangerine', cursive;
   font-size: 22px;
+  background-image: url('http://cdn23.us1.fansshare.com/photos/abstract/abstract-blue-backgrounds-blue-1817998121.jpg');
   /*text-shadow: 4px 4px 4px #aaa;*/
-  background-image: "https://thumbs.dreamstime.com/z/digital-program-code-2271732.jpg";
+  /*background-image: "https://thumbs.dreamstime.com/z/digital-program-code-2271732.jpg";*/
   /*background-color: #669900;*/
 }
 
 button {
-  background-color: inherit;
+  background-color: #162955;
 }
 
 p {
-  color:blue;
+  color:#4F628E;
 }
 
 img {
@@ -172,4 +177,9 @@ body {
   padding: 20px;
   background-color: white;
   margin: 20px;
+}
+
+.panel-footer{
+  background-image: url('http://www.planwallpaper.com/static/images/background_design_9a_by_jahim_myess-d6dniqj.jpg');
+
 }
