@@ -11,5 +11,9 @@ export default DS.Model.extend({
   }),
   ratings: DS.hasMany('rating', {
     async: true
-  })
+  }),
+  // contributors: DS.hasMany('contributor', {
+  //   async: true
+  // })
+
 });

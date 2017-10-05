@@ -38,6 +38,7 @@ export default Ember.Component.extend({
         site: this.get('url')
       }
       this.sendAction('submitUrl', params)
+      this.sendAction('contributors', array)
     },
     previewProject() {
       this.set('previewProject', true);
