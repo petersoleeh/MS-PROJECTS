@@ -1,13 +1,13 @@
 <div class="tabs">
   <div class="row">
-    <div class="col-md-3">
+    <div class="col-md-6">
     <img src={{project.images}} height="300px" width="500px">
   </div>
-  <div class="col-md-9">
-    {{#link-to 'project' project.id}}<h2>{{project.projectname}}</h2>{{/link-to}}
-    <p> ratings:{{project-rating project}}     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <div class="col-md-6">
+    {{#link-to 'project' project.id}}<h2 class="projecttitle">{{project.projectname}}</h2>{{/link-to}}
     <p>list of contributors {{project.contributors}}</p>
     <a href={{project.site}}>link of deployed site </a>
+    <p>Comments {{project.comments}}</p>
     {{update-project project=project update='update'}}
     </div>
    </div>

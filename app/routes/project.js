@@ -13,6 +13,7 @@ export default Ember.Route.extend({
         return project.save()
       })
 
+
     },
     saveRating(param) {
       var newRating = this.store.createRecord('rating', param)
@@ -21,7 +22,6 @@ export default Ember.Route.extend({
       newRating.save().then(function() {
         return project.save()
       })
-      console.log(param);
 
       this.transitionTo('project', project)
     }

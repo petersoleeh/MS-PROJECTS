@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  viewPreview: false,
+  previewProject: false,
   actions: {
     showPreview() {
       this.set('viewPreview', true);
@@ -38,6 +38,9 @@ export default Ember.Component.extend({
         site: this.get('url')
       }
       this.sendAction('submitUrl', params)
-    }
+    },
+    previewProject() {
+      this.set('previewProject', true);
+    },
   }
 });
