@@ -89,6 +89,7 @@ img {
   padding: 10px;
   border-radius: 15px;
   text-align: center;
+  box-shadow: 100px;
 }
 
 @media screen and (min-width: 580px) {
