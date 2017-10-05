@@ -1,8 +1,18 @@
 # MS-PROJECTS
-A web app that will detail different apps students come up with during team-week projects.
+
+## By:
+Peter Maina
+David Mwangi
+Vincent Muya
+Njoroge Mungai
+
+##
+
+This is an app that is thought out to enable Moringa students view projects birthed during project weeks of the different cohorts in months and years past. The app provides added functionality to enable students upload their newly created Module Projects to create a one stop viewing and interacting platform of the creativity brought out during Project Week.
+
 ## Prerequisites
 
-You will need the following things properly installed on your computer.
+To run the app,you will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with NPM)
@@ -12,33 +22,17 @@ You will need the following things properly installed on your computer.
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd questions-answers`
+* `cd MS-PROJECTS`
 * `npm install`
 
 ## Running / Development
 
 * `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
+* Visit your app at [http://localhost:4200]
 
 ### Deploying
 Firebase init
 Firebase deploy
-
-## Further Reading / Useful Links
 
 ## Technologies Used
 * HTML
@@ -46,12 +40,12 @@ Firebase deploy
 * BOOTSTRAP
 * JAVASCRIPT
 * NODE.JS
+* Ember.js
+
+### Known Bugs
+
+The app sporadically fails to grab the contributors names from github for loading onto the UI
 
 
-
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+## License
+MIT Copyright (c) 2017 MS-PROJECTS TEAM
