@@ -7,7 +7,7 @@
     {{#link-to 'project' project.id}}<h2 class="projecttitle">{{project.projectname}}</h2>{{/link-to}}
     <p>list of contributors {{project.contributors}}</p>
     <a href={{project.site}}>link of deployed site </a>
-    <p>Comments {{project-rating project}}</p>
+    <p>{{project-rating project}}  Comments: {{num-comments project}} </p>
     {{update-project project=project update='update'}}
     </div>
    </div>
