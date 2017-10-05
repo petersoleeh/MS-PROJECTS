@@ -2,10 +2,7 @@ import Ember from 'ember';
 
 export function projectRating(params /*, hash*/ ) {
   var project = params[0]
-  var array = project.get('ratings')
-  console.log(project.get('ratings').get('length'));
 
-  var total = 0
   if (project.get('ratings').get('length') >= 2) {
     return Ember.String.htmlSafe('<span class="glyphicon glyphicon-fire"></span>');
   }
