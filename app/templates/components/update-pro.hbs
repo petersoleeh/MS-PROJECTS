@@ -1,0 +1,29 @@
+<form>
+<div class="form-group">
+  Deployed Site:<br>
+  {{input value=url type="text" id='url'}}<br>
+  github handle:<br>
+  {{input value=github type="text" id="github"}}
+</div>
+  <button {{action "submitUrl"}} type="submit" name="button"class="btn btn-submit">Preview Project</button>
+</form>
+<div class="container">
+  <h2>Project Preview</h2>
+  <div class="tabs">
+  <div class="row">
+    <div class="col-md-9">
+    <img class="big" src={{project.images}}>
+  </div>
+  <div class="col-md-3">
+    <h2>{{project.projectname}}</h2>
+    <p>Github handle</p>
+    <p>Commits:73</p>
+    <p>contributors </p><a href="#">Peter,Njoroge,David,Vincent</a>
+    <a href="#">link of deployed site </a>
+    </div>
+    </div>
+   </div>
+   <form class="Comment" method="post">
+<button type="button" name="button"class="btn btn-submit">Submit Project</button>
+</form>
+</div>

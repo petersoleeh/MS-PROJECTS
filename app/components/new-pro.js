@@ -1,9 +1,13 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  viewPreview: false,
   actions: {
+    showPreview() {
+      this.set('viewPreview', true);
+    },
     submitUrl() {
-
+      console.log('am here');
       var q = {
         deployed: this.get('url'),
         github: this.get('github')

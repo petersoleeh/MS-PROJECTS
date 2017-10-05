@@ -11,11 +11,11 @@ export default Ember.Component.extend({
       var params = {
         author: this.get('author'),
         content: this.get('content'),
-        rating: this.get('rating'),
+        rating: parseInt(this.get('rating')),
         project: this.get('project')
       }
       var param = {
-        rating: this.get('rating'),
+        rating: parseInt(this.get('rating')),
         project: this.get('project')
       }
       this.set('addNewComment', false)
