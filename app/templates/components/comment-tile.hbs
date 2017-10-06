@@ -1,6 +1,6 @@
 
 <div class="comment">
   <p>{{comment.content}} <span class="right">rating: {{comment.rating}}</span></p>
-  <p>Author: {{comment.author}}  <span class="right"><button type="button" name="button"></button></span></p>
+  <p>Author: {{comment.author}}  <span class="right"><button class="btn btn-primary"type="button" name="button" {{action 'delete' comment}} >Delete</button></span></p>
 
 </div>

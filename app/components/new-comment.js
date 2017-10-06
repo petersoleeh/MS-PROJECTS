@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   addNewComment: false,
+  rate: false,
   actions: {
     commentShow() {
       this.set('addNewComment', true)
@@ -18,9 +19,15 @@ export default Ember.Component.extend({
         rating: parseInt(this.get('rating')),
         project: this.get('project')
       }
-      this.set('addNewComment', false)
-      this.sendAction('saveComment', params)
-      this.sendAction('saveRating', param)
+
+      if (param.rating > 10) {
+        this.set('rate', true)
+      } else {
+        this.set('addNewComment', false)
+        this.sendAction('saveComment', params)
+        this.sendAction('saveRating', param)
+
+      }
     }
   }
 });

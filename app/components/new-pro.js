@@ -1,9 +1,10 @@
+import config from '../config/environment';
 import Ember from 'ember';
 import config from '../config/environment';
 
 
 export default Ember.Component.extend({
-  previewProject: false,
+  blank: false,
   actions: {
     showPreview() {
       this.set('viewPreview', true);
@@ -13,35 +14,40 @@ export default Ember.Component.extend({
         deployed: this.get('url'),
         github: this.get('github')
       }
-      var a = q.github.split('/')
-      var aa = q.github.split('/')
-      var b = a.splice(3, 2)
-      var c = b.join('/')
-      var d = aa.splice(-1)
-      var e = d.join()
-      var key = config.myApiKey;
-      var f = 'http://api.screenshotmachine.com/?key=4055d6&dimension=1024x768&hash=94f0097b94d2f2486db52aab7cf268ad&url=' + q.deployed
-      // console.log(f);
-      var array = []
-      var url = 'https://api.github.com/repos/' + c + '/contributors'
-      Ember.$.getJSON(url).then(function(response) {
+      if (q.deployed === '' || q.github === '') {
+        this.set('blank', true)
+      } else {
+        this.set('blank', false)
+        var a = q.github.split('/')
+        var aa = q.github.split('/')
+        var b = a.splice(3, 2)
+        var c = b.join('/')
+        var d = aa.splice(-1)
+        var e = d.join()
+        var key = config.myApiKey;
+        var f = 'http://api.screenshotmachine.com/?key=' + key + '&dimension=1024x768&hash=94f0097b94d2f2486db52aab7cf268ad&url=' + q.deployed
+        // console.log(f);
         var array = []
-        for (var i = 0; i < response.length; i++) {
-          array.push(response[i].login)
+        var url = 'https://api.github.com/repos/' + c + '/contributors'
+        Ember.$.getJSON(url).then(function(response) {
+          var array = []
+          for (var i = 0; i < response.length; i++) {
+            array.push(response[i].login)
+          }
+          // console.log(array);
+
+        })
+
+        var params = {
+          images: f,
+          projectname: e,
+          github: this.get('github'),
+          contributors: array,
+          site: this.get('url')
         }
-        // console.log(array);
-
-      })
-
-      var params = {
-        images: f,
-        projectname: e,
-        github: this.get('github'),
-        contributors: array,
-        site: this.get('url')
+        this.sendAction('submitUrl', params)
+        this.sendAction('contributors', array)
       }
-      this.sendAction('submitUrl', params)
-      this.sendAction('contributors', array)
     },
     previewProject() {
       this.set('previewProject', true);

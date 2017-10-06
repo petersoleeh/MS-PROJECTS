@@ -5,10 +5,9 @@
   </div>
   <div class="col-md-6">
     {{#link-to 'project' project.id}}<h2 class="projecttitle">{{project.projectname}}</h2>{{/link-to}}
-    <p>list of contributors {{project.contributors}}</p>
-    <a href={{project.site}}>link of deployed site </a>
+    <p>Deployed Site:<a href={{project.site}}>Click here </a></P>
     <p>{{project-rating project}}  Comments: {{num-comments project}}  </p>
-    <p>avRating: {{ratings project}}</p>
+    <p>Rating: {{ratings project}}</p>
     {{update-project project=project update='update'}}
     </div>
    </div>

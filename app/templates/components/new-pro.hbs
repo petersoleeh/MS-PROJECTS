@@ -2,8 +2,11 @@
 <div class="form-group deployed" >
   Deployed Site:<br>
   {{input value=url type="text" id='url'}}<br>
-  github handle:<br>
+  github url:<br>
   {{input value=github type="text" id="github"}}
 </div>
+{{#if blank}}
+<p>you must input deployed and github with correct urls</p>
+{{/if}}
   <button {{action "submitUrl"}} type="submit"  class="btn btn-submit">Submit Project</button>
 </form>

@@ -6,6 +6,9 @@
 {{input value=author type="text" name="author"  placeholder="author"}}<br>
 <p></p>
 {{input value=rating type="number" name="rating"  placeholder="rating: from 0-10"}}<br>
+{{#if rate}}
+<p>the rating has to be a number between 1 and 10</p>
+{{/if}}
 
 <p></p>
 <button {{action 'saveComment'}} type="button" name="button"class="btn btn-submit">Submit Comment</button>

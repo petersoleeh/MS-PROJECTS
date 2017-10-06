@@ -11,17 +11,15 @@ export function ratings(params /*, hash*/ ) {
     total = ratings[i] + total
   }
   var av = total / ratings.length
-  var p = total
-  return av.toFixed(1)
-  // if (rentalPrice >= 150) {
-  //   return '$$$$';
-  // } else if (rentalPrice >= 100) {
-  //   return '$$$';
-  // } else if (rentalPrice >= 50) {
-  //   return '$$';
-  // } else if (rentalPrice <= 49) {
-  //   return '$';
-  // }
+  var st = av.toString()
+  // console.log(st);
+  if (st === 'NaN') {
+
+    return 0
+  } else {
+    return av.toFixed(1)
+  }
+
 }
 
 

@@ -1,13 +1,12 @@
 <div class="tabs">
 <div class="row">
   <div class="col-md-8">
-  <img  class="big" src={{project.images}}>
+  <img  class="big img-thumbnail" src={{project.images}}>
 </div>
 <div class="col-md-4">
     <h2>{{project.projectname}}</h2>
-    <p><a href={{project.github}}>{{project.github}}</a></p>
-    <a href={{project.site}}>{{project.site}}</a>
-    <p>contributors {{project.contributors}}</p>
+    <p>Github:<a href={{project.github}}>{{project.github}}</a></p>
+    <p>Deployed Site:<a href={{project.site}}>Click here </a></P>
     <p>Comments: {{num-comments project}}</p>
     <p>Ratings: {{ratings project}}</p>
     <!-- <form class="rating">
