@@ -5,6 +5,17 @@ export default Ember.Route.extend({
     return this.store.findRecord('project', params.project_id);
   },
   actions: {
+    delete(comment) {
+      // alert('imefika')
+      // comment.destroyRecord();
+      comment.destroyRecord();
+      // var comment_deletion = project.get('comment').map(function(comment) {
+      //   return comment.destroyRecord();
+      // })
+      // ember.RSVP.all(comment_deletion).then(function() {
+      //   return project.destroyRecord()
+      // })
+    },
     saveComment(params) {
       var newComment = this.store.createRecord('comment', params)
       var project = params.project
