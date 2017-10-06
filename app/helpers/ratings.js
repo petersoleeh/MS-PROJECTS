@@ -11,7 +11,6 @@ export function ratings(params /*, hash*/ ) {
     total = ratings[i] + total
   }
   var av = total / ratings.length
-  var p = total
   return av.toFixed(1)
   // if (rentalPrice >= 150) {
   //   return '$$$$';

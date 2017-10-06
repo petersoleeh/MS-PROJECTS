@@ -19,7 +19,7 @@ export default Ember.Component.extend({
         rating: parseInt(this.get('rating')),
         project: this.get('project')
       }
-      console.log(param.rating);
+
       if (param.rating > 10) {
         this.set('rate', true)
       } else {
