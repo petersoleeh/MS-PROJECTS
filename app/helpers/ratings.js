@@ -12,7 +12,7 @@ export function ratings(params /*, hash*/ ) {
   }
   var av = total / ratings.length
   var st = av.toString()
-  console.log(st);
+  // console.log(st);
   if (st === 'NaN') {
 
     return 0

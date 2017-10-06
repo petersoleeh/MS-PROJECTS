@@ -12,7 +12,6 @@ export default Ember.Component.extend({
         github: this.get('github')
       }
       if (q.deployed === '' || q.github === '') {
-        console.log('blank');
         this.set('blank', true)
       } else {
         this.set('blank', false)
